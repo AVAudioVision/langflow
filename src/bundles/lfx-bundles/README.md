@@ -40,6 +40,8 @@ pip install langflow                   # server + default partner bundles
 pip install lfx                        # engine only, no bundles
 pip install "lfx[bundles]"             # engine + this metapackage (deployment footnote)
 pip install "lfx-bundles[<provider>]"  # one provider's code + that provider's SDK deps
+pip install "lfx-bundles[all-no-torch]" # every provider except torch-pulling cuga/codeagents
+pip install "lfx-bundles[all]"         # every provider, incl. cuga/codeagents
 ```
 
 `lfx-bundles` itself depends only on `lfx`. Each provider's third-party SDKs are
