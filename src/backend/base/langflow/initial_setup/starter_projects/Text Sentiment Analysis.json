@@ -9,12 +9,16 @@
             "dataType": "Agent",
             "id": "Agent-tsa-a",
             "name": "response",
-            "output_types": ["Message"]
+            "output_types": [
+              "Message"
+            ]
           },
           "targetHandle": {
             "fieldName": "summary",
             "id": "Prompt-zNjqy",
-            "inputTypes": ["Message"],
+            "inputTypes": [
+              "Message"
+            ],
             "type": "str"
           }
         },
@@ -33,12 +37,16 @@
             "dataType": "Prompt",
             "id": "Prompt-zNjqy",
             "name": "prompt",
-            "output_types": ["Message"]
+            "output_types": [
+              "Message"
+            ]
           },
           "targetHandle": {
             "fieldName": "input_value",
             "id": "Agent-tsa-b",
-            "inputTypes": ["Message"],
+            "inputTypes": [
+              "Message"
+            ],
             "type": "str"
           }
         },
@@ -57,12 +65,16 @@
             "dataType": "File",
             "id": "File-a3YoT",
             "name": "message",
-            "output_types": ["Message"]
+            "output_types": [
+              "Message"
+            ]
           },
           "targetHandle": {
             "fieldName": "input_value",
             "id": "Agent-tsa-c",
-            "inputTypes": ["Message"],
+            "inputTypes": [
+              "Message"
+            ],
             "type": "str"
           }
         },
@@ -81,12 +93,20 @@
             "dataType": "Agent",
             "id": "Agent-tsa-c",
             "name": "response",
-            "output_types": ["Message"]
+            "output_types": [
+              "Message"
+            ]
           },
           "targetHandle": {
             "fieldName": "input_value",
             "id": "ChatOutput-DVXkn",
-            "inputTypes": ["Data", "JSON", "DataFrame", "Table", "Message"],
+            "inputTypes": [
+              "Data",
+              "JSON",
+              "DataFrame",
+              "Table",
+              "Message"
+            ],
             "type": "other"
           }
         },
@@ -105,12 +125,16 @@
             "dataType": "File",
             "id": "File-a3YoT",
             "name": "message",
-            "output_types": ["Message"]
+            "output_types": [
+              "Message"
+            ]
           },
           "targetHandle": {
             "fieldName": "input_value",
             "id": "Agent-tsa-a",
-            "inputTypes": ["Message"],
+            "inputTypes": [
+              "Message"
+            ],
             "type": "str"
           }
         },
@@ -129,12 +153,20 @@
             "dataType": "Agent",
             "id": "Agent-tsa-b",
             "name": "response",
-            "output_types": ["Message"]
+            "output_types": [
+              "Message"
+            ]
           },
           "targetHandle": {
             "fieldName": "input_value",
             "id": "ChatOutput-h5fAd",
-            "inputTypes": ["Data", "JSON", "DataFrame", "Table", "Message"],
+            "inputTypes": [
+              "Data",
+              "JSON",
+              "DataFrame",
+              "Table",
+              "Message"
+            ],
             "type": "other"
           }
         },
@@ -151,11 +183,15 @@
         "data": {
           "id": "Prompt-zNjqy",
           "node": {
-            "base_classes": ["Message"],
+            "base_classes": [
+              "Message"
+            ],
             "beta": false,
             "conditional_paths": [],
             "custom_fields": {
-              "template": ["summary"]
+              "template": [
+                "summary"
+              ]
             },
             "description": "Create a prompt template with dynamic variables.",
             "display_name": "Prompt Template",
@@ -195,7 +231,9 @@
                 "name": "prompt",
                 "selected": "Message",
                 "tool_mode": true,
-                "types": ["Message"],
+                "types": [
+                  "Message"
+                ],
                 "value": "__UNDEFINED__"
               }
             ],
@@ -228,7 +266,9 @@
                 "fileTypes": [],
                 "file_path": "",
                 "info": "",
-                "input_types": ["Message"],
+                "input_types": [
+                  "Message"
+                ],
                 "list": false,
                 "load_from_db": false,
                 "multiline": true,
@@ -265,7 +305,9 @@
                 "display_name": "Tool Placeholder",
                 "dynamic": false,
                 "info": "A placeholder input for tool mode.",
-                "input_types": ["Message"],
+                "input_types": [
+                  "Message"
+                ],
                 "list": false,
                 "list_add_label": "Add More",
                 "load_from_db": false,
@@ -325,7 +367,9 @@
         "data": {
           "id": "ChatOutput-DVXkn",
           "node": {
-            "base_classes": ["Message"],
+            "base_classes": [
+              "Message"
+            ],
             "beta": false,
             "conditional_paths": [],
             "custom_fields": {},
@@ -380,7 +424,9 @@
                 "name": "message",
                 "selected": "Message",
                 "tool_mode": true,
-                "types": ["Message"],
+                "types": [
+                  "Message"
+                ],
                 "value": "__UNDEFINED__"
               }
             ],
@@ -429,7 +475,9 @@
                 "display_name": "Context ID",
                 "dynamic": false,
                 "info": "The context ID of the chat. Adds an extra layer to the local memory.",
-                "input_types": ["Message"],
+                "input_types": [
+                  "Message"
+                ],
                 "list": false,
                 "list_add_label": "Add More",
                 "load_from_db": false,
@@ -450,7 +498,9 @@
                 "display_name": "Data Template",
                 "dynamic": false,
                 "info": "Template to convert Data to Text. If left empty, it will be dynamically set to the Data's text key.",
-                "input_types": ["Message"],
+                "input_types": [
+                  "Message"
+                ],
                 "list": false,
                 "list_add_label": "Add More",
                 "load_from_db": false,
@@ -498,7 +548,10 @@
                 "dynamic": false,
                 "info": "Type of sender.",
                 "name": "sender",
-                "options": ["Machine", "User"],
+                "options": [
+                  "Machine",
+                  "User"
+                ],
                 "options_metadata": [],
                 "placeholder": "",
                 "required": false,
@@ -516,7 +569,9 @@
                 "display_name": "Sender Name",
                 "dynamic": false,
                 "info": "Name of the sender.",
-                "input_types": ["Message"],
+                "input_types": [
+                  "Message"
+                ],
                 "list": false,
                 "list_add_label": "Add More",
                 "load_from_db": false,
@@ -537,7 +592,9 @@
                 "display_name": "Session ID",
                 "dynamic": false,
                 "info": "The session ID of the chat. If empty, the current session ID parameter will be used.",
-                "input_types": ["Message"],
+                "input_types": [
+                  "Message"
+                ],
                 "list": false,
                 "list_add_label": "Add More",
                 "load_from_db": false,
@@ -593,7 +650,9 @@
         "data": {
           "id": "ChatOutput-h5fAd",
           "node": {
-            "base_classes": ["Message"],
+            "base_classes": [
+              "Message"
+            ],
             "beta": false,
             "conditional_paths": [],
             "custom_fields": {},
@@ -648,7 +707,9 @@
                 "name": "message",
                 "selected": "Message",
                 "tool_mode": true,
-                "types": ["Message"],
+                "types": [
+                  "Message"
+                ],
                 "value": "__UNDEFINED__"
               }
             ],
@@ -697,7 +758,9 @@
                 "display_name": "Context ID",
                 "dynamic": false,
                 "info": "The context ID of the chat. Adds an extra layer to the local memory.",
-                "input_types": ["Message"],
+                "input_types": [
+                  "Message"
+                ],
                 "list": false,
                 "list_add_label": "Add More",
                 "load_from_db": false,
@@ -718,7 +781,9 @@
                 "display_name": "Data Template",
                 "dynamic": false,
                 "info": "Template to convert Data to Text. If left empty, it will be dynamically set to the Data's text key.",
-                "input_types": ["Message"],
+                "input_types": [
+                  "Message"
+                ],
                 "list": false,
                 "list_add_label": "Add More",
                 "load_from_db": false,
@@ -766,7 +831,10 @@
                 "dynamic": false,
                 "info": "Type of sender.",
                 "name": "sender",
-                "options": ["Machine", "User"],
+                "options": [
+                  "Machine",
+                  "User"
+                ],
                 "options_metadata": [],
                 "placeholder": "",
                 "required": false,
@@ -784,7 +852,9 @@
                 "display_name": "Sender Name",
                 "dynamic": false,
                 "info": "Name of the sender.",
-                "input_types": ["Message"],
+                "input_types": [
+                  "Message"
+                ],
                 "list": false,
                 "list_add_label": "Add More",
                 "load_from_db": false,
@@ -805,7 +875,9 @@
                 "display_name": "Session ID",
                 "dynamic": false,
                 "info": "The session ID of the chat. If empty, the current session ID parameter will be used.",
-                "input_types": ["Message"],
+                "input_types": [
+                  "Message"
+                ],
                 "list": false,
                 "list_add_label": "Add More",
                 "load_from_db": false,
@@ -861,7 +933,9 @@
         "data": {
           "id": "File-a3YoT",
           "node": {
-            "base_classes": ["Message"],
+            "base_classes": [
+              "Message"
+            ],
             "beta": false,
             "conditional_paths": [],
             "custom_fields": {},
@@ -919,7 +993,7 @@
                   },
                   {
                     "name": "googleapiclient",
-                    "version": null
+                    "version": "2.198.0"
                   }
                 ],
                 "total_dependencies": 4
@@ -938,7 +1012,9 @@
                 "name": "message",
                 "selected": "Message",
                 "tool_mode": true,
-                "types": ["Message"],
+                "types": [
+                  "Message"
+                ],
                 "value": "__UNDEFINED__"
               }
             ],
@@ -1104,7 +1180,9 @@
                 "display_name": "Doc Key",
                 "dynamic": false,
                 "info": "The key to use for the DoclingDocument column.",
-                "input_types": ["Message"],
+                "input_types": [
+                  "Message"
+                ],
                 "list": false,
                 "list_add_label": "Add More",
                 "load_from_db": false,
@@ -1146,7 +1224,11 @@
                 "display_name": "Server File Path",
                 "dynamic": false,
                 "info": "Data object with a 'file_path' property pointing to server file or a Message object with a path to the file. Supercedes 'Path' but supports same file types.",
-                "input_types": ["Data", "JSON", "Message"],
+                "input_types": [
+                  "Data",
+                  "JSON",
+                  "Message"
+                ],
                 "list": true,
                 "list_add_label": "Add More",
                 "name": "file_path",
@@ -1281,7 +1363,10 @@
                 "external_options": {},
                 "info": "OCR engine to use. Only available when pipeline is set to 'standard'.",
                 "name": "ocr_engine",
-                "options": ["None", "easyocr"],
+                "options": [
+                  "None",
+                  "easyocr"
+                ],
                 "options_metadata": [],
                 "placeholder": "",
                 "required": false,
@@ -1369,7 +1454,10 @@
                 "external_options": {},
                 "info": "Docling pipeline to use",
                 "name": "pipeline",
-                "options": ["standard", "vlm"],
+                "options": [
+                  "standard",
+                  "vlm"
+                ],
                 "options_metadata": [],
                 "placeholder": "",
                 "real_time_refresh": true,
@@ -1537,7 +1625,11 @@
           "_connectionMode": false,
           "id": "Agent-tsa-a",
           "node": {
-            "base_classes": ["Data", "JSON", "Message"],
+            "base_classes": [
+              "Data",
+              "JSON",
+              "Message"
+            ],
             "beta": false,
             "conditional_paths": [],
             "custom_fields": {},
@@ -1602,7 +1694,9 @@
                 "name": "response",
                 "selected": "Message",
                 "tool_mode": true,
-                "types": ["Message"],
+                "types": [
+                  "Message"
+                ],
                 "value": "__UNDEFINED__"
               },
               {
@@ -1614,7 +1708,10 @@
                 "name": "structured_response",
                 "selected": "JSON",
                 "tool_mode": true,
-                "types": ["Data", "JSON"],
+                "types": [
+                  "Data",
+                  "JSON"
+                ],
                 "value": "__UNDEFINED__"
               }
             ],
@@ -1740,7 +1837,9 @@
                 "display_name": "Context ID",
                 "dynamic": false,
                 "info": "The context ID of the chat. Adds an extra layer to the local memory.",
-                "input_types": ["Message"],
+                "input_types": [
+                  "Message"
+                ],
                 "list": false,
                 "list_add_label": "Add More",
                 "load_from_db": false,
@@ -1765,7 +1864,9 @@
                 "display_name": "Output Format Instructions",
                 "dynamic": false,
                 "info": "Generic Template for structured output formatting. Valid only with Structured response.",
-                "input_types": ["Message"],
+                "input_types": [
+                  "Message"
+                ],
                 "list": false,
                 "list_add_label": "Add More",
                 "load_from_db": false,
@@ -1811,7 +1912,9 @@
                 "display_name": "Input",
                 "dynamic": false,
                 "info": "The input provided by the user for the agent to process.",
-                "input_types": ["Message"],
+                "input_types": [
+                  "Message"
+                ],
                 "list": false,
                 "list_add_label": "Add More",
                 "load_from_db": false,
@@ -1902,7 +2005,9 @@
                   "tool_calling": true
                 },
                 "info": "Select your model provider",
-                "input_types": ["LanguageModel"],
+                "input_types": [
+                  "LanguageModel"
+                ],
                 "list": false,
                 "list_add_label": "Add More",
                 "model_type": "language",
@@ -1917,7 +2022,9 @@
                       "max_tokens_field_name": "max_tokens",
                       "model_class": "ChatOpenAI",
                       "model_name_param": "model",
-                      "reasoning_models": ["gpt-5.5-pro"]
+                      "reasoning_models": [
+                        "gpt-5.5-pro"
+                      ]
                     },
                     "name": "gpt-5.5-pro",
                     "provider": "OpenAI"
@@ -1931,7 +2038,9 @@
                       "max_tokens_field_name": "max_tokens",
                       "model_class": "ChatOpenAI",
                       "model_name_param": "model",
-                      "reasoning_models": ["gpt-5.5"]
+                      "reasoning_models": [
+                        "gpt-5.5"
+                      ]
                     },
                     "name": "gpt-5.5",
                     "provider": "OpenAI"
@@ -1945,7 +2054,9 @@
                       "max_tokens_field_name": "max_tokens",
                       "model_class": "ChatOpenAI",
                       "model_name_param": "model",
-                      "reasoning_models": ["gpt-5.4-nano"]
+                      "reasoning_models": [
+                        "gpt-5.4-nano"
+                      ]
                     },
                     "name": "gpt-5.4-nano",
                     "provider": "OpenAI"
@@ -1959,7 +2070,9 @@
                       "max_tokens_field_name": "max_tokens",
                       "model_class": "ChatOpenAI",
                       "model_name_param": "model",
-                      "reasoning_models": ["gpt-5.4-mini"]
+                      "reasoning_models": [
+                        "gpt-5.4-mini"
+                      ]
                     },
                     "name": "gpt-5.4-mini",
                     "provider": "OpenAI"
@@ -1973,7 +2086,9 @@
                       "max_tokens_field_name": "max_tokens",
                       "model_class": "ChatOpenAI",
                       "model_name_param": "model",
-                      "reasoning_models": ["gpt-5.4"]
+                      "reasoning_models": [
+                        "gpt-5.4"
+                      ]
                     },
                     "name": "gpt-5.4",
                     "provider": "OpenAI"
@@ -2071,7 +2186,10 @@
                 "display_name": "Output Schema",
                 "dynamic": false,
                 "info": "Schema Validation: Define the structure and data types for structured output. No validation if no output schema.",
-                "input_types": ["DataFrame", "Table"],
+                "input_types": [
+                  "DataFrame",
+                  "Table"
+                ],
                 "is_list": true,
                 "list_add_label": "Add More",
                 "name": "output_schema",
@@ -2106,7 +2224,13 @@
                     "edit_mode": "inline",
                     "formatter": "text",
                     "name": "type",
-                    "options": ["str", "int", "float", "bool", "dict"],
+                    "options": [
+                      "str",
+                      "int",
+                      "float",
+                      "bool",
+                      "dict"
+                    ],
                     "type": "str"
                   },
                   {
@@ -2179,7 +2303,9 @@
                 "display_name": "Agent Instructions",
                 "dynamic": false,
                 "info": "System Prompt: Initial instructions and context provided to guide the agent's behavior. Supports dynamic placeholders: {current_date}, {model_name}, {optional_user_context}.",
-                "input_types": ["Message"],
+                "input_types": [
+                  "Message"
+                ],
                 "list": false,
                 "list_add_label": "Add More",
                 "load_from_db": false,
@@ -2204,7 +2330,9 @@
                 "display_name": "Tools",
                 "dynamic": false,
                 "info": "These are the tools that the agent can use to help with tasks.",
-                "input_types": ["Tool"],
+                "input_types": [
+                  "Tool"
+                ],
                 "list": true,
                 "list_add_label": "Add More",
                 "name": "tools",
@@ -2247,7 +2375,11 @@
           "_connectionMode": false,
           "id": "Agent-tsa-b",
           "node": {
-            "base_classes": ["Data", "JSON", "Message"],
+            "base_classes": [
+              "Data",
+              "JSON",
+              "Message"
+            ],
             "beta": false,
             "conditional_paths": [],
             "custom_fields": {},
@@ -2312,7 +2444,9 @@
                 "name": "response",
                 "selected": "Message",
                 "tool_mode": true,
-                "types": ["Message"],
+                "types": [
+                  "Message"
+                ],
                 "value": "__UNDEFINED__"
               },
               {
@@ -2324,7 +2458,10 @@
                 "name": "structured_response",
                 "selected": "JSON",
                 "tool_mode": true,
-                "types": ["Data", "JSON"],
+                "types": [
+                  "Data",
+                  "JSON"
+                ],
                 "value": "__UNDEFINED__"
               }
             ],
@@ -2450,7 +2587,9 @@
                 "display_name": "Context ID",
                 "dynamic": false,
                 "info": "The context ID of the chat. Adds an extra layer to the local memory.",
-                "input_types": ["Message"],
+                "input_types": [
+                  "Message"
+                ],
                 "list": false,
                 "list_add_label": "Add More",
                 "load_from_db": false,
@@ -2475,7 +2614,9 @@
                 "display_name": "Output Format Instructions",
                 "dynamic": false,
                 "info": "Generic Template for structured output formatting. Valid only with Structured response.",
-                "input_types": ["Message"],
+                "input_types": [
+                  "Message"
+                ],
                 "list": false,
                 "list_add_label": "Add More",
                 "load_from_db": false,
@@ -2521,7 +2662,9 @@
                 "display_name": "Input",
                 "dynamic": false,
                 "info": "The input provided by the user for the agent to process.",
-                "input_types": ["Message"],
+                "input_types": [
+                  "Message"
+                ],
                 "list": false,
                 "list_add_label": "Add More",
                 "load_from_db": false,
@@ -2612,7 +2755,9 @@
                   "tool_calling": true
                 },
                 "info": "Select your model provider",
-                "input_types": ["LanguageModel"],
+                "input_types": [
+                  "LanguageModel"
+                ],
                 "list": false,
                 "list_add_label": "Add More",
                 "model_type": "language",
@@ -2627,7 +2772,9 @@
                       "max_tokens_field_name": "max_tokens",
                       "model_class": "ChatOpenAI",
                       "model_name_param": "model",
-                      "reasoning_models": ["gpt-5.5-pro"]
+                      "reasoning_models": [
+                        "gpt-5.5-pro"
+                      ]
                     },
                     "name": "gpt-5.5-pro",
                     "provider": "OpenAI"
@@ -2641,7 +2788,9 @@
                       "max_tokens_field_name": "max_tokens",
                       "model_class": "ChatOpenAI",
                       "model_name_param": "model",
-                      "reasoning_models": ["gpt-5.5"]
+                      "reasoning_models": [
+                        "gpt-5.5"
+                      ]
                     },
                     "name": "gpt-5.5",
                     "provider": "OpenAI"
@@ -2655,7 +2804,9 @@
                       "max_tokens_field_name": "max_tokens",
                       "model_class": "ChatOpenAI",
                       "model_name_param": "model",
-                      "reasoning_models": ["gpt-5.4-nano"]
+                      "reasoning_models": [
+                        "gpt-5.4-nano"
+                      ]
                     },
                     "name": "gpt-5.4-nano",
                     "provider": "OpenAI"
@@ -2669,7 +2820,9 @@
                       "max_tokens_field_name": "max_tokens",
                       "model_class": "ChatOpenAI",
                       "model_name_param": "model",
-                      "reasoning_models": ["gpt-5.4-mini"]
+                      "reasoning_models": [
+                        "gpt-5.4-mini"
+                      ]
                     },
                     "name": "gpt-5.4-mini",
                     "provider": "OpenAI"
@@ -2683,7 +2836,9 @@
                       "max_tokens_field_name": "max_tokens",
                       "model_class": "ChatOpenAI",
                       "model_name_param": "model",
-                      "reasoning_models": ["gpt-5.4"]
+                      "reasoning_models": [
+                        "gpt-5.4"
+                      ]
                     },
                     "name": "gpt-5.4",
                     "provider": "OpenAI"
@@ -2781,7 +2936,10 @@
                 "display_name": "Output Schema",
                 "dynamic": false,
                 "info": "Schema Validation: Define the structure and data types for structured output. No validation if no output schema.",
-                "input_types": ["DataFrame", "Table"],
+                "input_types": [
+                  "DataFrame",
+                  "Table"
+                ],
                 "is_list": true,
                 "list_add_label": "Add More",
                 "name": "output_schema",
@@ -2816,7 +2974,13 @@
                     "edit_mode": "inline",
                     "formatter": "text",
                     "name": "type",
-                    "options": ["str", "int", "float", "bool", "dict"],
+                    "options": [
+                      "str",
+                      "int",
+                      "float",
+                      "bool",
+                      "dict"
+                    ],
                     "type": "str"
                   },
                   {
@@ -2889,7 +3053,9 @@
                 "display_name": "Agent Instructions",
                 "dynamic": false,
                 "info": "System Prompt: Initial instructions and context provided to guide the agent's behavior. Supports dynamic placeholders: {current_date}, {model_name}, {optional_user_context}.",
-                "input_types": ["Message"],
+                "input_types": [
+                  "Message"
+                ],
                 "list": false,
                 "list_add_label": "Add More",
                 "load_from_db": false,
@@ -2914,7 +3080,9 @@
                 "display_name": "Tools",
                 "dynamic": false,
                 "info": "These are the tools that the agent can use to help with tasks.",
-                "input_types": ["Tool"],
+                "input_types": [
+                  "Tool"
+                ],
                 "list": true,
                 "list_add_label": "Add More",
                 "name": "tools",
@@ -2957,7 +3125,11 @@
           "_connectionMode": false,
           "id": "Agent-tsa-c",
           "node": {
-            "base_classes": ["Data", "JSON", "Message"],
+            "base_classes": [
+              "Data",
+              "JSON",
+              "Message"
+            ],
             "beta": false,
             "conditional_paths": [],
             "custom_fields": {},
@@ -3022,7 +3194,9 @@
                 "name": "response",
                 "selected": "Message",
                 "tool_mode": true,
-                "types": ["Message"],
+                "types": [
+                  "Message"
+                ],
                 "value": "__UNDEFINED__"
               },
               {
@@ -3034,7 +3208,10 @@
                 "name": "structured_response",
                 "selected": "JSON",
                 "tool_mode": true,
-                "types": ["Data", "JSON"],
+                "types": [
+                  "Data",
+                  "JSON"
+                ],
                 "value": "__UNDEFINED__"
               }
             ],
@@ -3160,7 +3337,9 @@
                 "display_name": "Context ID",
                 "dynamic": false,
                 "info": "The context ID of the chat. Adds an extra layer to the local memory.",
-                "input_types": ["Message"],
+                "input_types": [
+                  "Message"
+                ],
                 "list": false,
                 "list_add_label": "Add More",
                 "load_from_db": false,
@@ -3185,7 +3364,9 @@
                 "display_name": "Output Format Instructions",
                 "dynamic": false,
                 "info": "Generic Template for structured output formatting. Valid only with Structured response.",
-                "input_types": ["Message"],
+                "input_types": [
+                  "Message"
+                ],
                 "list": false,
                 "list_add_label": "Add More",
                 "load_from_db": false,
@@ -3231,7 +3412,9 @@
                 "display_name": "Input",
                 "dynamic": false,
                 "info": "The input provided by the user for the agent to process.",
-                "input_types": ["Message"],
+                "input_types": [
+                  "Message"
+                ],
                 "list": false,
                 "list_add_label": "Add More",
                 "load_from_db": false,
@@ -3322,7 +3505,9 @@
                   "tool_calling": true
                 },
                 "info": "Select your model provider",
-                "input_types": ["LanguageModel"],
+                "input_types": [
+                  "LanguageModel"
+                ],
                 "list": false,
                 "list_add_label": "Add More",
                 "model_type": "language",
@@ -3337,7 +3522,9 @@
                       "max_tokens_field_name": "max_tokens",
                       "model_class": "ChatOpenAI",
                       "model_name_param": "model",
-                      "reasoning_models": ["gpt-5.5-pro"]
+                      "reasoning_models": [
+                        "gpt-5.5-pro"
+                      ]
                     },
                     "name": "gpt-5.5-pro",
                     "provider": "OpenAI"
@@ -3351,7 +3538,9 @@
                       "max_tokens_field_name": "max_tokens",
                       "model_class": "ChatOpenAI",
                       "model_name_param": "model",
-                      "reasoning_models": ["gpt-5.5"]
+                      "reasoning_models": [
+                        "gpt-5.5"
+                      ]
                     },
                     "name": "gpt-5.5",
                     "provider": "OpenAI"
@@ -3365,7 +3554,9 @@
                       "max_tokens_field_name": "max_tokens",
                       "model_class": "ChatOpenAI",
                       "model_name_param": "model",
-                      "reasoning_models": ["gpt-5.4-nano"]
+                      "reasoning_models": [
+                        "gpt-5.4-nano"
+                      ]
                     },
                     "name": "gpt-5.4-nano",
                     "provider": "OpenAI"
@@ -3379,7 +3570,9 @@
                       "max_tokens_field_name": "max_tokens",
                       "model_class": "ChatOpenAI",
                       "model_name_param": "model",
-                      "reasoning_models": ["gpt-5.4-mini"]
+                      "reasoning_models": [
+                        "gpt-5.4-mini"
+                      ]
                     },
                     "name": "gpt-5.4-mini",
                     "provider": "OpenAI"
@@ -3393,7 +3586,9 @@
                       "max_tokens_field_name": "max_tokens",
                       "model_class": "ChatOpenAI",
                       "model_name_param": "model",
-                      "reasoning_models": ["gpt-5.4"]
+                      "reasoning_models": [
+                        "gpt-5.4"
+                      ]
                     },
                     "name": "gpt-5.4",
                     "provider": "OpenAI"
@@ -3491,7 +3686,10 @@
                 "display_name": "Output Schema",
                 "dynamic": false,
                 "info": "Schema Validation: Define the structure and data types for structured output. No validation if no output schema.",
-                "input_types": ["DataFrame", "Table"],
+                "input_types": [
+                  "DataFrame",
+                  "Table"
+                ],
                 "is_list": true,
                 "list_add_label": "Add More",
                 "name": "output_schema",
@@ -3526,7 +3724,13 @@
                     "edit_mode": "inline",
                     "formatter": "text",
                     "name": "type",
-                    "options": ["str", "int", "float", "bool", "dict"],
+                    "options": [
+                      "str",
+                      "int",
+                      "float",
+                      "bool",
+                      "dict"
+                    ],
                     "type": "str"
                   },
                   {
@@ -3599,7 +3803,9 @@
                 "display_name": "Agent Instructions",
                 "dynamic": false,
                 "info": "System Prompt: Initial instructions and context provided to guide the agent's behavior. Supports dynamic placeholders: {current_date}, {model_name}, {optional_user_context}.",
-                "input_types": ["Message"],
+                "input_types": [
+                  "Message"
+                ],
                 "list": false,
                 "list_add_label": "Add More",
                 "load_from_db": false,
@@ -3624,7 +3830,9 @@
                 "display_name": "Tools",
                 "dynamic": false,
                 "info": "These are the tools that the agent can use to help with tasks.",
-                "input_types": ["Tool"],
+                "input_types": [
+                  "Tool"
+                ],
                 "list": true,
                 "list_add_label": "Add More",
                 "name": "tools",
@@ -3710,5 +3918,7 @@
   "last_tested_version": "1.10.0",
   "locked": false,
   "name": "Text Sentiment Analysis",
-  "tags": ["classification"]
+  "tags": [
+    "classification"
+  ]
 }
